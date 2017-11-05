@@ -1,0 +1,8 @@
+hash: f932e98e942c2baf7bc46bac47abe46d45764362193a848b164bfce47c939d19
+updated: 2017-11-05T17:52:15.985268838+09:00
+imports:
+- name: github.com/gin-gonic/gin
+  version: 76ad15ab32d000115cb7622a8317d7425dfc039c
+- name: github.com/go-sql-driver/mysql
+  version: fade21009797158e7b79e04c340118a9220c6f9e
+testImports: []
