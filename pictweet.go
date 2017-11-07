@@ -26,3 +26,7 @@ func (s Server) Routes() {
 
 	router.Run(":3000")
 }
+
+//func LoadTemplates(r *gin.Engine) {
+//	r.LoadHTMLGlob("templates/**/*")
+//}

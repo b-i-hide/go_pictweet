@@ -1,8 +1,38 @@
-hash: f932e98e942c2baf7bc46bac47abe46d45764362193a848b164bfce47c939d19
-updated: 2017-11-05T17:52:15.985268838+09:00
+hash: ea6e74fcfd26fec2e1cb3475d8d78a108792c31bed3c9d806d81d8cbfc5442a9
+updated: 2017-11-07T19:13:10.139828865+09:00
 imports:
+- name: bitbucket.org/liamstask/goose
+  version: 8488cc47d90c8a502b1c41a462a6d9cc8ee0a895
+  subpackages:
+  - cmd/goose
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
   version: 76ad15ab32d000115cb7622a8317d7425dfc039c
+  subpackages:
+  - binding
+  - json
+  - render
 - name: github.com/go-sql-driver/mysql
   version: fade21009797158e7b79e04c340118a9220c6f9e
+- name: github.com/golang/protobuf
+  version: 1643683e1b54a9e88ad26d98f81400c8c9d9f4f9
+  subpackages:
+  - proto
+- name: github.com/json-iterator/go
+  version: aed5a81f09330b8d254a117fb853e2f886f1cb3b
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/ugorji/go
+  version: 3c86213f839c6a21d88c21b290e7601cff44dbca
+  subpackages:
+  - codec
+- name: golang.org/x/sys
+  version: d4266bc12aae0b4128952c889b769442fce5d2f1
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/yaml.v2
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
 testImports: []
