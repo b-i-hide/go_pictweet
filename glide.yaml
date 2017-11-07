@@ -2,4 +2,5 @@ package: localhost/pictweet
 import:
 - package: github.com/gin-gonic/gin
 - package: github.com/go-sql-driver/mysql
+- package: bitbucket.org/liamstask/goose/cmd/goose
 
