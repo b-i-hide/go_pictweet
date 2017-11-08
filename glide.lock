@@ -1,10 +1,12 @@
-hash: ea6e74fcfd26fec2e1cb3475d8d78a108792c31bed3c9d806d81d8cbfc5442a9
-updated: 2017-11-07T19:13:10.139828865+09:00
+hash: 063b2558c87734a975998612efe236740ac680c474bdcbb703480a233a37167c
+updated: 2017-11-08T13:32:31.263436555+09:00
 imports:
 - name: bitbucket.org/liamstask/goose
   version: 8488cc47d90c8a502b1c41a462a6d9cc8ee0a895
   subpackages:
   - cmd/goose
+- name: github.com/gin-contrib/multitemplate
+  version: bbc6daf6024bc4c48f334a0490321cd48a24da3d
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
@@ -20,15 +22,15 @@ imports:
   subpackages:
   - proto
 - name: github.com/json-iterator/go
-  version: aed5a81f09330b8d254a117fb853e2f886f1cb3b
+  version: b1b003864e6d16e27a543216770f74dda086fbb9
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/ugorji/go
-  version: 3c86213f839c6a21d88c21b290e7601cff44dbca
+  version: 00a57e09e383d445aeef6c6cd642969dc4360231
   subpackages:
   - codec
 - name: golang.org/x/sys
-  version: d4266bc12aae0b4128952c889b769442fce5d2f1
+  version: 75813c647272dd855bda156405bf844a5414f5bf
   subpackages:
   - unix
 - name: gopkg.in/go-playground/validator.v8

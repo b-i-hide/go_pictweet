@@ -2,8 +2,10 @@ package main
 
 import (
 	"database/sql"
-	db2 "localhost/pictweet/db"
+	"github.com/gin-contrib/multitemplate"
 	"github.com/gin-gonic/gin"
+	pictweet_db "localhost/pictweet/db"
+	"localhost/pictweet/controllers"
 )
 
 type Server struct {
@@ -11,7 +13,7 @@ type Server struct {
 }
 
 func main() {
-	db := db2.InitPictweetDB()
+	db := pictweet_db.InitPictweetDB()
 	s := NewServer()
 	s.DB = db
 	s.Routes()
@@ -23,10 +25,28 @@ func NewServer() Server {
 
 func (s Server) Routes() {
 	router := gin.Default()
+	router.HTMLRender = createMyRender()
+	loadStaticFiles(router)
 
-	router.Run(":3000")
+	tweets := &controllers.Tweet{DB: s.DB}
+
+	router.GET("/", tweets.Index)
+
+	router.Run(":8080")
 }
 
-//func LoadTemplates(r *gin.Engine) {
-//	r.LoadHTMLGlob("templates/**/*")
-//}
+func createMyRender() multitemplate.Render {
+	r := multitemplate.New()
+
+	r.AddFromFiles("tweets_index", "templates/layout/base.html", "templates/tweets/index.html")
+	//r.AddFromFiles("tweets_show", "templates/layout/base.html", "templates/tweets/show.html")
+
+	return r
+}
+
+func loadStaticFiles(r *gin.Engine) {
+	r.Static("/public/css/", "./public/css")
+	r.Static("/public/js/", "./public/js/")
+	r.Static("/public/fonts/", "./public/fonts/")
+	r.Static("/public/images/", "./public/images/")
+}
