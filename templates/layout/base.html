@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>{{.title}}</title>
 </head>
 <body>
-$END$
+    <header>
+       <p>ヘッダー</p>
+    </header>
+
+    <div class="wrapper">
+        {{template "main" .}}
+    </div>
+
+    <footer>
+        <p>フッター</p>
+    </footer>
 </body>
 </html>
