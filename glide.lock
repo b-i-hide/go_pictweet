@@ -1,5 +1,5 @@
-hash: 063b2558c87734a975998612efe236740ac680c474bdcbb703480a233a37167c
-updated: 2017-11-08T13:32:31.263436555+09:00
+hash: 1734d223a961b038dcd2c7a7420b07da823acfe93ccdb732cb9a1501a9eba79b
+updated: 2017-11-09T16:15:41.363107769+09:00
 imports:
 - name: bitbucket.org/liamstask/goose
   version: 8488cc47d90c8a502b1c41a462a6d9cc8ee0a895
@@ -29,8 +29,13 @@ imports:
   version: 00a57e09e383d445aeef6c6cd642969dc4360231
   subpackages:
   - codec
+- name: golang.org/x/crypto
+  version: 6a293f2d4b14b8e6d3f0539e383f6d0d30fce3fd
+  subpackages:
+  - bcrypt
+  - blowfish
 - name: golang.org/x/sys
-  version: 75813c647272dd855bda156405bf844a5414f5bf
+  version: 4b45465282a4624cf39876842a017334f13b8aff
   subpackages:
   - unix
 - name: gopkg.in/go-playground/validator.v8

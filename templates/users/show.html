@@ -1,0 +1,15 @@
+{{define "main"}}
+<h1>{{.title}}</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Joined At</th>
+    </tr>
+    <tr>
+        <td>{{.user.Name}}</td>
+        <td>{{.user.Email}}</td>
+        <td>{{.user.CreatedAt}}</td>
+    </tr>
+</table>
+{{end}}
