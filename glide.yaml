@@ -4,4 +4,6 @@ import:
 - package: github.com/go-sql-driver/mysql
 - package: bitbucket.org/liamstask/goose/cmd/goose
 - package: github.com/gin-contrib/multitemplate
+- package: golang.org/x/crypto/bcrypt
+- package: github.com/gin-gonic/gin/binding
 
